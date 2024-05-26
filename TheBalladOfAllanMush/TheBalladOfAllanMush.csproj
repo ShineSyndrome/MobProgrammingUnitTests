@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Ventures\II - GalaxyZ\" />
     <Folder Include="Ventures\III - Edison\" />
     <Folder Include="Ventures\IV - BrainChain\" />
   </ItemGroup>

@@ -10,7 +10,7 @@ namespace UserServiceTests
     /// so you've been tasked with fixing some *minor* bugs with his multi-million dollar,
     /// internet finance product "FriendFee".
     /// 
-    /// An experienced QA has written some tests to reproduce user reported bugs.
+    /// An experienced QA has written some tests to reproduce the user reported bugs.
     /// 
     /// Using these tests as a guide-line, can you fix UserService.cs?
     /// Since this is just a warm-up, band-aid fixes are fine!
