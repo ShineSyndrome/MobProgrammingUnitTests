@@ -5,10 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TheBalladOfAllanMush.Ventures.II___GalaxyZ;
-using TheBalladOfAllanMush.Ventures.II___GalaxyZ.Models;
+using TheBalladOfAllanMush.Ventures.III___GalaxyZ;
+using TheBalladOfAllanMush.Ventures.III___GalaxyZ.Models;
 
-namespace UnitTests.II___GalaxyZ
+namespace UnitTests.III___GalaxyZ
 {
     /// <summary>
     /// Allan Mush was so impressed with your work squashing those bugs,
@@ -27,7 +27,7 @@ namespace UnitTests.II___GalaxyZ
     /// You can use the title of each test to make judgement on any
     /// test behaviour that needs modifying.
     /// </summary>
-    public  class RocketDiagnosticServiceTests
+    public class RocketDiagnosticServiceTests
     {
         public Mock<IRocketIgnitionService> RocketIgnitionServiceMock { get; } = new();
 
@@ -37,20 +37,20 @@ namespace UnitTests.II___GalaxyZ
             //arrange
             var testRocket = new Rocket()
             {
-                Engines = new List<Engine>
+                Engines = new List<Booster>
                 {
-                    new Engine()
+                    new Booster()
                     {
                         HorsePower = 1,
                     },
-                    new Engine()
+                    new Booster()
                     {
                         HorsePower = 1,
                     }
                 }
             };
 
-            RocketIgnitionServiceMock.Setup(x => x.IgniteEngineAsync(It.IsAny<Engine>()))
+            RocketIgnitionServiceMock.Setup(x => x.IgniteEngineAsync(It.IsAny<Booster>()))
                 .ReturnsAsync(false);
 
             var sut = CreateTestService();

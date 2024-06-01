@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Ventures\III - Edison\" />
-    <Folder Include="Ventures\IV - BrainChain\" />
+    <Folder Include="Ventures\II - Edison\Models\" />
   </ItemGroup>
 
 </Project>

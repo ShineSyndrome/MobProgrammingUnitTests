@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheBalladOfAllanMush.Ventures.II___GalaxyZ.Models
+namespace TheBalladOfAllanMush.Ventures.III___GalaxyZ.Models
 {
     public class Rocket
     {
-        public List<Engine> Engines { get; set; } = new();
+        public List<Booster> Engines { get; set; } = new();
     }
 }

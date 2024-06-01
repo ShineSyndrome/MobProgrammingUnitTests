@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheBalladOfAllanMush.Ventures.II___GalaxyZ.Models
+namespace TheBalladOfAllanMush.Ventures.III___GalaxyZ.Models
 {
-    public class Engine
+    public class Booster
     {
         public int? HorsePower { get; set; }
         public bool Ignited { get; set; } = false;

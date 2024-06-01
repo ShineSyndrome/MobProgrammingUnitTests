@@ -2,11 +2,11 @@ using Moq;
 using TheBalladOfAllanMush.AggravatinglySuccessfulVentures.I___FriendFee;
 using TheBalladOfAllanMush.AggravatinglySuccessfulVentures.I___FriendFee.Model;
 
-namespace UserServiceTests
+namespace UnitTests.I___FriendFee
 {
     /// <summary>
     /// Internet genius and entrepeneur Allan Mush has hired you as an intern.
-    /// He's busy trying to setup a space-faring organisation right now, 
+    /// He's busy trying to setup an electric car organisation right now, 
     /// so you've been tasked with fixing some *minor* bugs with his multi-million dollar,
     /// internet finance product "FriendFee".
     /// 
@@ -16,7 +16,7 @@ namespace UserServiceTests
     /// Since this is just a warm-up, band-aid fixes are fine!
     /// You won't need to edit the test code itself.
     /// 
-    /// ALL tests must pass to move on!
+    /// You can move on once all the tests in this class pass.
     /// </summary>
     public class UserServiceTests
     {
@@ -25,7 +25,7 @@ namespace UserServiceTests
 
         // CFBP now says we can only lock accounts if they're above the new limit
         // - Friendly QA guy
-        double newLimit = 1_000_000;
+        private double newLimit = 1_000_000;
 
         [Fact]
         public async Task LockAccountAsync_CustomerFundsAboveNewThreshold_ShouldLockAndReturnFunds()
