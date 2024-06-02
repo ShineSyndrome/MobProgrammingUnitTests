@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TheBalladOfAllanMush.Ventures.II___Edison;
+using TheBalladOfAllanMush.Ventures.II___Edison.Exceptions;
+using TheBalladOfAllanMush.Ventures.II___Edison.Models;
 
 namespace UnitTests.II___Edison
 {
@@ -39,11 +41,11 @@ namespace UnitTests.II___Edison
             //arrange
 
             var sut = CreateTestService();
-            
-            //act
+
+            //act (hint: Xunit Record)
 
 
-            //assert (hint: Xunit Record)
+            //assert 
 
         }
 
@@ -68,7 +70,8 @@ namespace UnitTests.II___Edison
 
             //act
 
-            //assert
+            //assert (Hint: Moq Verify can prove a service was used)
+
         }
 
         [Fact]
@@ -80,7 +83,7 @@ namespace UnitTests.II___Edison
 
             //act
 
-            //assert (Hint: sometimes you have to verify something did not happen)
+            //assert (Hint: Moq Verify can prove a service was used)
 
         }
 
@@ -93,21 +96,7 @@ namespace UnitTests.II___Edison
 
             //act
 
-            //assert
-
-        }
-
-        [Fact]
-        public async Task AccelerateToSpeed_TargetSpeedNegative_ShouldThrowArgumentException()
-        {
-            //arrange
-
-            var sut = CreateTestService();
-
-            //act
-
-            //assert
-
+            //assert (Hint: Moq Verify can prove a service was used)
         }
 
         [Fact]
@@ -115,7 +104,10 @@ namespace UnitTests.II___Edison
         {
             //arrange
             //hint: moq callbacks can give a lot of flexibility when
-            //you need to track some internal state.
+            //you need to track some internal state
+            //
+            //...Of course if you aren't careful you might get an infinite loop.
+            //I promise this is as hard as Moq gets!
 
             var sut = CreateTestService();
 
@@ -139,7 +131,7 @@ namespace UnitTests.II___Edison
             return new SelfDriveService(
                 SpeedometerMock.Object,
                 EngineMock.Object,
-                Steering.Object);
+                SteeringMock.Object);
         }
     }
 }
