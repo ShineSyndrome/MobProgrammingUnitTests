@@ -16,6 +16,6 @@ namespace TheBalladOfAllanMush.Ventures.II___Edison.Models
         /// -90 is to the left
         /// 180 or -180 is behind.
         /// </summary>
-        public short Bearing { get; } = 0;
+        public short Bearing { get; set; } = 0;
     }
 }
