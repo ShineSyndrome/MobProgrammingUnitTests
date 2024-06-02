@@ -57,9 +57,6 @@ namespace TheBalladOfAllanMush.Ventures.II___Edison
 
         public async Task AccelerateToSpeed(int targetSpeed)
         {
-            if (targetSpeed < 0)
-                throw new ArgumentException();
-
             while (await Speedometer.GetCurrentSpeed() < targetSpeed)
             {
                 var speedIncrease = Math.Max(maxAccelerationCoefficient, targetSpeed);

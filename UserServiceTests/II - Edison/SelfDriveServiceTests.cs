@@ -31,7 +31,7 @@ namespace UnitTests.II___Edison
     {
         private Mock<ISpeedometer> SpeedometerMock { get; } = new();
         private Mock<IEngine> EngineMock { get; } = new();
-        private Mock<ISteering> Steering { get; } = new();
+        private Mock<ISteering> SteeringMock { get; } = new();
 
         [Fact]
         public async Task EvadePedestrian_ParameterNull_ShouldThrowArgumentException()
