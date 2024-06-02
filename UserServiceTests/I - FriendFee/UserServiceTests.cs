@@ -14,7 +14,7 @@ namespace UnitTests.I___FriendFee
     /// 
     /// Using these tests as a guide-line, can you fix UserService.cs?
     /// Since this is just a warm-up, band-aid fixes are fine!
-    /// You won't need to edit the test code itself.
+    /// You won't need to edit the code in this file.
     /// 
     /// You can move on once all the tests in this class pass.
     /// </summary>
