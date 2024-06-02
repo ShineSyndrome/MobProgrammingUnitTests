@@ -59,7 +59,7 @@ namespace TheBalladOfAllanMush.Ventures.II___Edison
         {
             while (await Speedometer.GetCurrentSpeed() < targetSpeed)
             {
-                var speedIncrease = Math.Max(maxAccelerationCoefficient, targetSpeed);
+                var speedIncrease = Math.Min(maxAccelerationCoefficient, targetSpeed);
 
                 await Engine.Accelerate(speedIncrease);
             }
