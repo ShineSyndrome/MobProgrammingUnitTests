@@ -8,6 +8,6 @@ namespace TheBalladOfAllanMush.Ventures.III___GalaxyZ.Models
 {
     public class Rocket
     {
-        public List<Booster> Engines { get; set; } = new();
+        public List<Booster>? Engines { get; set; } = new();
     }
 }

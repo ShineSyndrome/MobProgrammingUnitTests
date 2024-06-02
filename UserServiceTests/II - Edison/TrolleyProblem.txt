@@ -1,0 +1,29 @@
+﻿Implement a new class called TrolleyProblem.cs in the "II - Edison" folder.
+
+This class will consume ISelfDriveService and ISteering as a dependency.
+
+There will be one public method in the new class named "MinimiseCasualties".
+
+This method will be asynchronous and return a Task<Direction>.
+It will take a collection (list) of Pedestrians as an input.
+
+The behaviour of this method has the following requirements-
+
+It calls ISelfDriveService.AccelerateToSpeed with a target speed of 30.
+
+For each pedestrian in our collection, we call ISelfDriveService.AvoidPedestrian() on it.
+We ignore any calls that return 'Center' (pedestrians behind).
+We tally any calls that return left or right.
+
+Once tallies are done, we call ISteering.SteeringOverride with the direction
+that has the highest tally.
+
+Eg. We have 3 returns from avoid pedestrian with Direction.Right
+But we have only 2 returns from avoid pedestrian with Direction.Left
+
+Therefore we call ISteering.OverrideSteering with Direction.Right
+We then return the chosen direction.
+
+In the event of a tie (equal tally of left and right), we throw a SelfDriveException .
+
+Once you have written the class, verify its behaviour with unit tests.

@@ -10,5 +10,6 @@ namespace TheBalladOfAllanMush.Ventures.II___Edison
     public interface ISteering
     {
         Task<bool> AttemptSteering(Direction direction);
+        Task<bool> SteeringOverride(Direction direction);
     }
 }
