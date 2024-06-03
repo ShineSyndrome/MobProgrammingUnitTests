@@ -70,7 +70,7 @@ namespace UnitTests.II___Edison
 
             //act
 
-            //assert (Hint: Moq Verify can prove a service was used)
+            //assert
 
         }
 
@@ -83,7 +83,7 @@ namespace UnitTests.II___Edison
 
             //act
 
-            //assert (Hint: Moq Verify can prove a service was used)
+            //assert (Hint: sometimes you need to verify something *did not* happen)
 
         }
 
@@ -96,7 +96,7 @@ namespace UnitTests.II___Edison
 
             //act
 
-            //assert (Hint: Moq Verify can prove a service was used)
+            //assert
         }
 
         [Fact]
