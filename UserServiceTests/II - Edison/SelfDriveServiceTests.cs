@@ -11,18 +11,18 @@ using TheBalladOfAllanMush.Ventures.II___Edison.Models;
 namespace UnitTests.II___Edison
 {
     /// <summary>
-    /// Good news. You did so well fixing those bugs that Allan has
+    /// Good news! You did so well fixing those bugs that Allan has
     /// bought you on to his new electric car venture.
     /// The bad news is that the friendly QA has gotten fed-up, and left
     /// for greener pastures. Mr. Mush has decided that you're ready
-    /// to write the unit tests instead.
+    /// to write unit tests instead.
     /// 
     /// Luckily the code for Edison electric cars is much better quality.
-    /// Luckier still, the QA managed to stub out the test cases required.
+    /// Even better, the QA managed to stub out the test cases required.
     /// 
     /// There are two parts to this section- 
     /// 
-    /// 1) Fill out the tests in each placeholder method below,
+    /// 1) First, fill out the tests in each placeholder method below,
     /// using the method names as guidance.
     /// 2) Write new code for a requested feature, and then write the
     /// tests that will verify the behaviour requested.

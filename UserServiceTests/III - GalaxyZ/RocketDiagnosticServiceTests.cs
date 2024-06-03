@@ -11,22 +11,22 @@ namespace UnitTests.III___GalaxyZ
 {
     /// <summary>
     /// Allan Mush has taken notice of your talent writing tests.
-    /// He's so impressed, he's promoted you as a dev on his space faring venture!
+    /// He's so impressed, he's promoted you to develop for his space faring venture!
     /// 
-    /// Since there's a critical launch tomorrow, all devs are crunching 
+    /// Since there's a critical launch tomorrow, everyone is crunching 
     /// to finish promised features and get a release out on time. 
-    /// This has left no one any time to write tests!
+    /// This has left no one any time for testing!
     /// 
-    /// When you voiced your concerns, Allan assured you that everything 
-    /// will be fine. He sat down with his laptop last night and bashed out
-    /// the tests himself.
+    /// When you voiced your concerns, Allan waved them away. 
+    /// Apparently, he sat down with his laptop last night and 
+    /// bashed out the tests himself.
     /// 
     /// While working on smaller tasks for GalaxyZ, you start to get an
     /// ominous feeling about the rocket launch tomorrow...
     /// Maybe these tests aren't as air-tight as Mush would have you believe.
     /// 
     /// This time instead of changing the code in RocketDiagnosticService.cs,
-    /// can you instead fix the tests so that they accurately report failures?
+    /// can you instead fix the tests so that they all accurately report failures?
     /// 
     /// You can use the title of each test to make judgement on any
     /// test behaviour that needs modifying.
