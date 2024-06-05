@@ -74,7 +74,7 @@ namespace TheBalladOfAllanMush.AggravatinglySuccessfulVentures.I___FriendFee
             {
                 foreach (string s in CustomerProfessions.BannedSaleItems)
                 {
-                    if (customer.Profession.Contains(s))
+                    if (lowerProfession.Contains(s))
                         return true;
                 }
             }
